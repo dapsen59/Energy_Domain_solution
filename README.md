@@ -9,3 +9,8 @@ conn_params_dic = {
     "user"      : "postgres",
     "password"  : "postgres"
 }
+
+To run the main ETL script (Single_Family_ETL) Please ensure the data file (PropertyData_R.txt) is in the same folder/directory as the ETL script. I am unable to include the data file due to my github size restriction.
+
+Also, I have included two scripts to extract (sql_query_script_to_df, sql_query_to_df) to extract five corporate entities which own the greatest number of single-family residential properties, 
+"sql_query_script_to_df" does job better but feel free to run both. 
