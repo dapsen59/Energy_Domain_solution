@@ -1,0 +1,15 @@
+#create DATABASE script 
+CREATE DATABASE coding_challenge;
+
+
+#create table script used 
+CREATE TABLE IF NOT EXISTS tarrant_residential (
+    "Account_Num" Int,
+    "Owner_Name" VARCHAR,
+    "Owner_Address" VARCHAR,
+    "Owner_CityState" VARCHAR,
+    "Owner_Zip" VARCHAR,
+    "Situs_Address" VARCHAR,
+    "Property_Class" VARCHAR,
+    CONSTRAINT "acct_uniq" UNIQUE ("Account_Num")
+);
