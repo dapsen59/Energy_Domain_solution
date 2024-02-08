@@ -3,11 +3,11 @@ from sqlalchemy import create_engine
 import pandas as pd
 
 # Establish the connection using psycopg2
-connection = psycopg2.connect(database="coding_challenge", user='postgres', password='backPASS1?!', host="localhost", port=5432)
+connection = psycopg2.connect(database="coding_challenge", user='postgres', password='postgres', host="localhost", port=5432)
 
 # Create an SQLAlchemy engine from the psycopg2 connection
 # Use the connection string directly in the create_engine function
-engine = create_engine('postgresql+psycopg2://postgres:backPASS1?!@localhost:5432/coding_challenge')
+engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost:5432/coding_challenge')
 
 # Define SQL query
 sql_query = """
